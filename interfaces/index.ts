@@ -1,4 +1,5 @@
 export interface RoomProps {
+    id: string
     name: string
     address: string
     image: string
@@ -7,5 +8,10 @@ export interface RoomProps {
 }
 
 export interface HeadingProps {
-    title: string
+    title: string | undefined
+}
+export interface RoomPageProps {
+  params: {
+    id: string;
+  };
 }

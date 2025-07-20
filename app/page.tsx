@@ -8,7 +8,7 @@ export default function Home() {
     <>
     <Heading title="Available Rooms" />
     {rooms.length > 0 ? rooms.map((room) => (
-      <RoomCard key={room.$id} name={room.name} address={room.address} image={`/images/rooms/${room.image}`} price={room.price_per_hour} availability={room.availability}/>
+      <RoomCard key={room.$id} id={room.$id} name={room.name} address={room.address} image={`/images/rooms/${room.image}`} price={room.price_per_hour} availability={room.availability}/>
     )) :
     <p>No available rooms at the moment</p>
     }
